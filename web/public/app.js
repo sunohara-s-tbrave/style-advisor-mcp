@@ -14,6 +14,7 @@ const MAX_IMAGE_BYTES = 8 * 1024 * 1024;
 const ACCEPTED_IMAGE_TYPES = ["image/png", "image/jpeg", "image/webp", "image/gif"];
 
 let pendingImage = null; // { mediaType, data (base64, no prefix), dataUrl }
+let isSending = false;
 
 const narrowScreen = window.matchMedia("(max-width: 480px)");
 const applyPlaceholder = (isNarrow) => {
@@ -182,16 +183,18 @@ suggestions?.addEventListener("click", (event) => {
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
+  if (isSending) return; // a reply is still in flight; let the user keep typing, but don't send yet
+
   const image = pendingImage;
   const typed = input.value.trim();
   const message = typed || (image ? "この写真を見て診断してください。" : "");
   if (!message) return;
 
+  isSending = true;
   appendUserMessage(message, image?.dataUrl);
   input.value = "";
   resizeTextarea();
   clearAttachment();
-  input.disabled = true;
   submitButton.disabled = true;
 
   const thinkingEl = appendThinkingMessage();
@@ -218,7 +221,7 @@ form.addEventListener("submit", async (event) => {
     thinkingEl.remove();
     appendErrorMessage(String(error));
   } finally {
-    input.disabled = false;
+    isSending = false;
     submitButton.disabled = false;
     input.focus();
   }
