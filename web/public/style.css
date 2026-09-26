@@ -214,7 +214,7 @@ body:not(.chat-active) .log {
   display: flex;
   align-items: flex-start;
   gap: 0.6rem;
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.85rem;
 }
 
 .msg.user {
@@ -256,9 +256,10 @@ body:not(.chat-active) .log {
 
 .bubble {
   max-width: 78%;
-  padding: 0.6rem 0.9rem;
+  padding: 0.55rem 0.85rem;
   border-radius: 14px;
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.5;
   overflow-wrap: break-word;
 }
 
@@ -344,23 +345,23 @@ body:not(.chat-active) .log {
 
 .bubble :is(h1, h2, h3, h4) {
   font-weight: 700;
-  font-size: 1.05rem;
-  line-height: 1.4;
-  margin: 0.7rem 0 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  margin: 0.5rem 0 0.25rem;
   color: var(--text);
 }
 
 .bubble p {
-  margin: 0.45rem 0;
+  margin: 0.35rem 0;
 }
 
 .bubble :is(ul, ol) {
-  margin: 0.45rem 0;
-  padding-left: 1.3rem;
+  margin: 0.35rem 0;
+  padding-left: 1.2rem;
 }
 
 .bubble li {
-  margin: 0.25rem 0;
+  margin: 0.15rem 0;
 }
 
 .bubble code {
