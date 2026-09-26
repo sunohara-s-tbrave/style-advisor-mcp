@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+.env
+
+# Locally saved user profile notes (personal data — never commit).
+/profile.md

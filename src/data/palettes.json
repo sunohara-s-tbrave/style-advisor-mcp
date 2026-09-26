@@ -1,0 +1,50 @@
+{
+  "spring": {
+    "label": "スプリング（イエベ春）",
+    "characteristics": "クリアで明るい、温かみのある色が映える。",
+    "recommended": [
+      { "name": "コーラルピンク", "hex": "#FF7F6B" },
+      { "name": "アイボリー", "hex": "#FFFDD0" },
+      { "name": "ライトターコイズ", "hex": "#7FCDCD" },
+      { "name": "ゴールデンイエロー", "hex": "#FFD966" }
+    ],
+    "accentAdvice": "はっきりした暖色をアクセントに使うと生き生きした印象になる。",
+    "accessory": "ゴールド系の金属が肌になじみやすい。"
+  },
+  "summer": {
+    "label": "サマー（ブルベ夏）",
+    "characteristics": "ソフトで淡く、青みがかった色が映える。",
+    "recommended": [
+      { "name": "ラベンダー", "hex": "#C8A2C8" },
+      { "name": "スモーキーブルー", "hex": "#7A9CC6" },
+      { "name": "ローズピンク", "hex": "#E8A0BF" },
+      { "name": "ライトグレー", "hex": "#D3D3D3" }
+    ],
+    "accentAdvice": "彩度を抑えた優しい色合いでまとめると洗練された印象になる。",
+    "accessory": "シルバー系の金属が肌になじみやすい。"
+  },
+  "autumn": {
+    "label": "オータム（イエベ秋）",
+    "characteristics": "深みのある、温かみのあるシックな色が映える。",
+    "recommended": [
+      { "name": "マスタード", "hex": "#E1AD01" },
+      { "name": "テラコッタ", "hex": "#E2725B" },
+      { "name": "カーキ", "hex": "#806B4E" },
+      { "name": "ダークブラウン", "hex": "#6F4E37" }
+    ],
+    "accentAdvice": "落ち着いた深みカラーでまとめると、重厚感と親しみやすさが両立する。",
+    "accessory": "ゴールドやマット質感の金属が肌になじみやすい。"
+  },
+  "winter": {
+    "label": "ウィンター（ブルベ冬）",
+    "characteristics": "はっきりした高コントラストな色が映える。",
+    "recommended": [
+      { "name": "ロイヤルブルー", "hex": "#4169E1" },
+      { "name": "ピュアホワイト", "hex": "#FFFFFF" },
+      { "name": "ブラック", "hex": "#1A1A1A" },
+      { "name": "マゼンタ", "hex": "#D6337A" }
+    ],
+    "accentAdvice": "白と黒などコントラストの強い組み合わせが、凛とした印象を作る。",
+    "accessory": "シルバーやプラチナ系の金属が肌になじみやすい。"
+  }
+}
