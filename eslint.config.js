@@ -23,6 +23,7 @@ export default tseslint.config(
         window: "readonly",
         marked: "readonly",
         DOMPurify: "readonly",
+        FileReader: "readonly",
       },
     },
   },
